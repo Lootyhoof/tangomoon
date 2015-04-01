@@ -1,0 +1,25 @@
+#go-button,
+#urlbar > toolbarbutton {
+  -moz-appearance: none;
+  list-style-image: url("chrome://browser/skin/reload-stop-go.png");
+  padding: 0 3px;
+  background-origin: border-box;
+  border: none;
+}
+
+#go-button,
+#urlbar-go-button {
+  -moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+
+#urlbar-reload-button {
+  -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#urlbar-reload-button:not([disabled]):hover {
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+
+#urlbar-stop-button {
+  -moz-image-region: rect(0px, 48px, 16px, 32px);
+}

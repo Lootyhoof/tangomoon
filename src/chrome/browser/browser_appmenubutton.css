@@ -1,0 +1,67 @@
+#appmenu-button {
+  -moz-appearance: none;
+  background: url("chrome://browser/skin/icon.png") no-repeat,
+			  -moz-linear-gradient(rgb(125,166,210), rgb(97,148,203) 95%);
+  background-clip: padding-box;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid rgba(53,102,164,.9);
+  border-top: none;
+  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset,
+              0 0 0 1px rgba(255,255,255,.25) inset;
+  color: white;
+  text-shadow: 0 0 1px rgba(0,0,0,.7),
+               0 1px 1.5px rgba(0,0,0,.5);
+  font-weight: bold;
+  padding: 0 1.5em .05em;
+  margin: 0 0 2px;
+}
+
+@media all and (-moz-windows-classic) {
+  #appmenu-button {
+    margin-bottom: 1px;
+  }
+}
+
+
+#main-window[privatebrowsingmode=temporary] #appmenu-button {
+  background-image: url("chrome://browser/skin/private_icon.png"),
+					-moz-linear-gradient(rgb(136,138,133), rgb(85,87,83) 95%);
+  border-color: rgba(46,52,54,.9);
+}
+
+#appmenu-button:hover:not(:active):not([open]) {
+  background-image: url("chrome://browser/skin/icon.png"),
+  					-moz-radial-gradient(center bottom, farthest-side, rgba(145,186,210,.5) 10%, rgba(117,168,223,0) 70%),                    
+  					-moz-radial-gradient(center bottom, farthest-side, rgb(95,136,180), rgba(183,205,228,0)),
+                    -moz-linear-gradient(rgb(105,146,190), rgb(77,128,183) 95%);
+  border-color: rgba(53,102,164,.9);
+  box-shadow: 0 1px 0 rgba(255,255,255,.1) inset,
+              0 0 1.5px 1px rgba(155,196,240,.7) inset,
+              0 -1px 0 rgba(155,196,240,.5) inset;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:not(:active):not([open]) {
+  background-image:  url("chrome://browser/skin/private_icon.png"),
+					-moz-radial-gradient(center bottom, farthest-side, rgba(156,158,153,.5) 10%, rgba(105,107,103,0) 70%),
+                    -moz-radial-gradient(center bottom, farthest-side, rgb(106,108,103), rgba(125,127,123,0)),
+                    -moz-linear-gradient(rgb(116,118,113), rgb(65,67,63) 95%);
+  border-color: rgba(46,52,54,.9);
+  box-shadow: 0 1px 0 rgba(255,255,255,.1) inset,
+              0 0 2px 1px rgba(166,168,163,.7) inset,
+              0 -1px 0 rgba(166,168,163,.5) inset;
+}
+
+#appmenu-button:hover:active,
+#appmenu-button[open] {
+  background-image: url("chrome://browser/skin/icon.png"),
+					-moz-linear-gradient(rgb(105,146,190), rgb(77,128,183) 95%);
+  border-radius: 0;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,
+              0 1px 1px rgba(0,0,0,.2) inset;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:active,
+#main-window[privatebrowsingmode=temporary] #appmenu-button[open] {
+  background-image: url("chrome://browser/skin/private_icon.png"),
+					-moz-linear-gradient(rgb(116,118,113), rgb(65,67,63) 95%);
+}

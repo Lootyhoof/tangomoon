@@ -1,0 +1,6 @@
+@media (-moz-windows-default-theme) {
+  toolbarbutton:-moz-lwtheme:not([disabled="true"]) {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}

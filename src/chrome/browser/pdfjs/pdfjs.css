@@ -1,0 +1,86 @@
+html[dir='ltr'] .toolbarButton.findNext::before {
+  content: url("chrome://browser/skin/pdfjs/findbarButton-next.png") !important;
+}
+
+html[dir='rtl'] .toolbarButton.findNext::before {
+  content: url("chrome://browser/skin/pdfjs/findbarButton-next-rtl.png") !important;
+}
+
+html[dir='ltr'] .toolbarButton.findPrevious::before {
+  content: url("chrome://browser/skin/pdfjs/findbarButton-previous.png") !important;
+}
+
+html[dir='rtl'] .toolbarButton.findPrevious::before {
+  content: url("chrome://browser/skin/pdfjs/findbarButton-previous-rtl.png") !important;
+}
+
+.toolbarButton.bookmark::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-bookmark.png") !important;
+}
+
+.toolbarButton.download::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-download.png") !important;
+}
+
+.toolbarButton.fullscreen::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-fullscreen.png") !important;
+}
+
+.dropdownToolbarButton {
+  background: url("chrome://browser/skin/pdfjs/toolbarButton-menuArrows.png") no-repeat !important;
+}
+
+html[dir='ltr'] .dropdownToolbarButton {
+  background-position: 95% !important;
+}
+html[dir='rtl'] .dropdownToolbarButton {
+  background-position: 5% !important;
+}
+
+.toolbarButton.openFile::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-openFile.png") !important;
+}
+
+html[dir='ltr'] .toolbarButton.pageDown::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-pageDown.png") !important;
+}
+
+html[dir='rtl'] .toolbarButton.pageDown::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-pageDown-rtl.png") !important;
+}
+
+html[dir='ltr'] .toolbarButton.pageUp::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-pageUp.png") !important;
+}
+
+html[dir='rtl'] .toolbarButton.pageUp::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-pageUp-rtl.png") !important;
+}
+
+.toolbarButton.print::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-print.png") !important;
+}
+
+#viewFind.toolbarButton::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-search.png") !important;
+}
+
+.toolbarButton#sidebarToggle::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-sidebarToggle.png") !important;
+}
+
+#viewOutline.toolbarButton::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-viewOutline.png") !important;
+}
+
+#viewThumbnail.toolbarButton::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-viewThumbnail.png") !important;
+}
+
+.toolbarButton.zoomIn::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-zoomIn.png") !important;
+}
+
+.toolbarButton.zoomOut::before {
+  content: url("chrome://browser/skin/pdfjs/toolbarButton-zoomOut.png") !important;
+}

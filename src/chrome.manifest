@@ -1,0 +1,7 @@
+skin    browser         Tangomoon	chrome/browser/
+skin    global          Tangomoon	chrome/global/
+skin    mozapps         Tangomoon	chrome/mozapps/
+
+skin    os_special         Tangomoon	chrome/os_special/general/
+
+skin    os_special         Tangomoon	chrome/os_special/aero/ os=WINNT osversion>=6 

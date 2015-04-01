@@ -1,0 +1,41 @@
+@-moz-document url("about:home") {
+#bookmarks::before {
+  content: url("chrome://browser/skin/abouthome/bookmarks.png") !important;
+}
+
+#history::before {
+  content: url("chrome://browser/skin/abouthome/history.png") !important;
+}
+
+#apps::before {
+  content: url("chrome://browser/skin/abouthome/apps.png") !important;
+}
+
+#settings::before {
+  content: url("chrome://browser/skin/abouthome/settings.png") !important;
+}
+
+#addons::before {
+  content: url("chrome://browser/skin/abouthome/addons.png") !important;
+}
+
+#downloads::before {
+  content: url("chrome://browser/skin/abouthome/downloads.png") !important;
+}
+
+#sync::before {
+  content: url("chrome://browser/skin/abouthome/sync.png") !important;
+}
+
+#restorePreviousSession::before {
+  content: url("chrome://browser/skin/abouthome/restore-large.png") !important;
+}
+
+body[dir=rtl] #restorePreviousSession::before {
+  transform: scaleX(-1) !important;
+}
+
+body[narrow] #restorePreviousSession::before {
+  content: url("chrome://browser/skin/abouthome/restore.png") !important;
+}
+}
