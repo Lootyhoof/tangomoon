@@ -1,6 +1,13 @@
+/* vim:set ts=2 sw=2 sts=2 et: */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
 #body {
   background: #fff;
 }
+
+/* Sources and breakpoints pane */
 
 #sources-pane {
   min-width: 50px;
@@ -9,6 +16,8 @@
 #sources-pane + .devtools-side-splitter {
   -moz-border-start-color: transparent;
 }
+
+/* ListWidget items */
 
 .list-widget-item {
   padding: 2px;
@@ -168,7 +177,7 @@
 #globalsearch {
   min-height: 10px;
   box-shadow: inset 0 -4px 8px #eee;
-  background: url("chrome://browser/skin/devtools/background-noise-toolbar.png");
+  background: url(background-noise-toolbar.png);
 }
 
 #globalsearch > vbox:not(:empty) {

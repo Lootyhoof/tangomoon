@@ -1,3 +1,10 @@
+/* vim:set ts=2 sw=2 sts=2 et: */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* Take away these two :visited rules to get a core dumper     */
+/* See https://bugzilla.mozilla.org/show_bug.cgi?id=575675#c30 */
 .link,
 .link:visited {
   color: #0091ff;
@@ -15,7 +22,7 @@
 /* From content */
 
 * {
-  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -64,7 +71,7 @@ body {
   overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background-image: url("chrome://browser/skin/devtools/arrow-e.png");
+  background-image: url(arrow-e.png);
   background-repeat: no-repeat;
   background-size: 5px 8px;
   background-position: 2px center;
@@ -72,7 +79,7 @@ body {
 }
 
 .other-property-value {
-  background-image: url("chrome://browser/skin/devtools/arrow-e.png");
+  background-image: url(arrow-e.png);
   background-repeat: no-repeat;
   background-size: 5px 8px;
   background-position: left center;

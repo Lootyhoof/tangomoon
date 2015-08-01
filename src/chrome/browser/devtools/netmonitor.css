@@ -1,9 +1,16 @@
+/* vim:set ts=2 sw=2 sts=2 et: */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
 #body {
-  background: url("chrome://browser/skin/devtools/background-noise-toolbar.png"), hsl(208,11%,27%);
+  background: url(background-noise-toolbar.png), hsl(208,11%,27%);
 }
 
+/* Network requests table */
+
 #requests-menu-empty-notice {
-  background: url("chrome://browser/skin/devtools/background-noise-toolbar.png"), hsl(208,11%,27%);
+  background: url(background-noise-toolbar.png), hsl(208,11%,27%);
   padding: 12px;
   font-size: 110%;
   color: #fff;
@@ -339,7 +346,7 @@ box.requests-menu-status[code^="5"] {
 /* Network request details tabpanels */
 
 .tabpanel-content {
-  background: url("chrome://browser/skin/devtools/background-noise-toolbar.png"), #3e4750;
+  background: url(background-noise-toolbar.png), #3e4750;
   box-shadow: 0 1px 0 hsla(204,45%,98%,.05) inset;
   color: #fff;
 }
@@ -380,7 +387,7 @@ box.requests-menu-status[code^="5"] {
 
 #response-content-info-header {
   background:
-    url("chrome://browser/skin/devtools/background-noise-toolbar.png"),
+    url(background-noise-toolbar.png),
     linear-gradient(hsl(0,61%,40%), hsl(0,61%,31%)) repeat-x top left;
   box-shadow:
     inset 0 1px 0 hsla(210,40%,83%,.15),

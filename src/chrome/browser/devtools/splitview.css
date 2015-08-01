@@ -1,3 +1,8 @@
+/* vim:set ts=2 sw=2 sts=2 et: */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
 .splitview-nav-container {
   background-color: hsl(211,21%,26%);
   color: white;
@@ -42,7 +47,7 @@
 }
 
 .splitview-nav > li.splitview-active {
-  background-image: url("chrome://browser/skin/devtools/itemArrow-ltr.png"),
+  background-image: url(itemArrow-ltr.png),
                     linear-gradient(to right, black, black),
                     linear-gradient(hsl(200,100%,33%), hsl(200,100%,25%));
   background-repeat: no-repeat, no-repeat, repeat-x;
@@ -54,7 +59,7 @@
 }
 
 .splitview-nav > li.splitview-active:-moz-locale-dir(rtl) {
-  background-image: url("chrome://browser/skin/devtools/itemArrow-rtl.png"),
+  background-image: url(itemArrow-rtl.png),
                     linear-gradient(to right, black, black),
                     linear-gradient(hsl(200,100%,33%), hsl(200,100%,25%));
   background-repeat: no-repeat, no-repeat, repeat-x;

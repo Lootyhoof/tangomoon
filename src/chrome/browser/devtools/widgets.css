@@ -1,7 +1,16 @@
+/* vim:set ts=2 sw=2 sts=2 et: */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* Generic pane helpers */
+
 .generic-toggled-side-pane {
   min-width: 50px;
   -moz-margin-start: 0px !important;
-
+  /* Unfortunately, transitions don't work properly with locale-aware properties,
+     so both the left and right margins are set via js, while the start margin
+     is always overridden here. */
 }
 
 .generic-toggled-side-pane[animated] {
@@ -12,26 +21,31 @@
 
 .breadcrumbs-widget-container {
   -moz-margin-end: 3px;
-  
+  /* A fake 1px-shadow is included in the border-images of the
+     breadcrumbs-widget-items, to match toolbar-buttons style.
+     This negative margin compensates the extra row of pixels created
+     by the shadow.*/
   margin: -1px 0;
 }
+
+/* Preloading hack, LTR */
 
 .breadcrumbs-widget-container:-moz-locale-dir(ltr)::after {
   content: '';
   display: block;
   background-image:
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-start.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-start-selected.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-start-pressed.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-start-selected-pressed.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-middle.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-middle-selected.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-middle-pressed.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-middle-selected-pressed.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-end.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-end-selected.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-end-pressed.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/ltr-end-selected-pressed.png");
+    url(breadcrumbs/ltr-start.png),
+    url(breadcrumbs/ltr-start-selected.png),
+    url(breadcrumbs/ltr-start-pressed.png),
+    url(breadcrumbs/ltr-start-selected-pressed.png),
+    url(breadcrumbs/ltr-middle.png),
+    url(breadcrumbs/ltr-middle-selected.png),
+    url(breadcrumbs/ltr-middle-pressed.png),
+    url(breadcrumbs/ltr-middle-selected-pressed.png),
+    url(breadcrumbs/ltr-end.png),
+    url(breadcrumbs/ltr-end-selected.png),
+    url(breadcrumbs/ltr-end-pressed.png),
+    url(breadcrumbs/ltr-end-selected-pressed.png);
 }
 
 /* Preloading hack, RTL */
@@ -40,18 +54,18 @@
   content: '';
   display: block;
   background-image:
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-start.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-start-selected.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-start-pressed.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-start-selected-pressed.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-middle.png",
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-middle-selected.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-middle-pressed.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-middle-selected-pressed.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-end.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-end-selected.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-end-pressed.png"),
-    url("chrome://browser/skin/devtools/breadcrumbs/breadcrumbs/rtl-end-selected-pressed.png");
+    url(breadcrumbs/rtl-start.png),
+    url(breadcrumbs/rtl-start-selected.png),
+    url(breadcrumbs/rtl-start-pressed.png),
+    url(breadcrumbs/rtl-start-selected-pressed.png),
+    url(breadcrumbs/rtl-middle.png),
+    url(breadcrumbs/rtl-middle-selected.png),
+    url(breadcrumbs/rtl-middle-pressed.png),
+    url(breadcrumbs/rtl-middle-selected-pressed.png),
+    url(breadcrumbs/rtl-end.png),
+    url(breadcrumbs/rtl-end-selected.png),
+    url(breadcrumbs/rtl-end-pressed.png),
+    url(breadcrumbs/rtl-end-selected-pressed.png);
 }
 
 .scrollbutton-up,
@@ -77,7 +91,7 @@
 .scrollbutton-up > .toolbarbutton-icon,
 .scrollbutton-down > .toolbarbutton-icon {
   -moz-appearance: none;
-  list-style-image: url("chrome://browser/skin/devtools/breadcrumbs-scrollbutton.png");
+  list-style-image: url("breadcrumbs-scrollbutton.png");
   -moz-image-region: rect(0px,7px,16px,0px);
   margin: 0 5px;
 }
@@ -148,47 +162,47 @@
 }
 
 .breadcrumbs-widget-item:not([checked]):hover:active:-moz-locale-dir(ltr) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/ltr-middle-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/ltr-middle-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item[checked]:-moz-locale-dir(ltr) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/ltr-middle-selected.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/ltr-middle-selected.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item[checked]:hover:active:-moz-locale-dir(ltr) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/ltr-middle-selected-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/ltr-middle-selected-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:first-of-type:-moz-locale-dir(ltr) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/ltr-start.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/ltr-start.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:first-of-type:not([checked]):hover:active:-moz-locale-dir(ltr) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/ltr-start-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/ltr-start-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:first-of-type[checked]:-moz-locale-dir(ltr) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/ltr-start-selected.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/ltr-start-selected.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:first-of-type[checked]:hover:active:-moz-locale-dir(ltr) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/ltr-start-selected-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/ltr-start-selected-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:last-of-type:-moz-locale-dir(ltr) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/ltr-end.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/ltr-end.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:last-of-type:not([checked]):hover:active:-moz-locale-dir(ltr) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/ltr-end-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/ltr-end-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:last-of-type[checked]:-moz-locale-dir(ltr) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/ltr-end-selected.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/ltr-end-selected.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:last-of-type[checked]:hover:active:-moz-locale-dir(ltr) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/ltr-end-selected-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/ltr-end-selected-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-container[overflows] > .breadcrumbs-widget-item:first-of-type:-moz-locale-dir(ltr) {
@@ -202,51 +216,51 @@
 /* Breadcrumbs RTL */
 
 .breadcrumbs-widget-item:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-middle.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-middle.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:not([checked]):hover:active:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-middle-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-middle-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item[checked]:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-middle-selected.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-middle-selected.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item[checked]:hover:active:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-middle-selected-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-middle-selected-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:first-of-type:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-start.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-start.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:first-of-type:not([checked]):hover:active:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-start-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-start-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:first-of-type[checked]:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-start-selected.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-start-selected.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:first-of-type[checked]:hover:active:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-start-selected-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-start-selected-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:last-of-type:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-end.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-end.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:last-of-type:not([checked]):hover:active:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-end-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-end-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:last-of-type[checked]:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-end-selected.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-end-selected.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-item:last-of-type[checked]:hover:active:-moz-locale-dir(rtl) {
-  border-image: url("chrome://browser/skin/devtools/breadcrumbs/rtl-end-selected-pressed.png") 2 13 2 13 fill stretch;
+  border-image: url("breadcrumbs/rtl-end-selected-pressed.png") 2 13 2 13 fill stretch;
 }
 
 .breadcrumbs-widget-container[overflows] > .breadcrumbs-widget-item:first-of-type:-moz-locale-dir(rtl) {
@@ -260,7 +274,7 @@
 /* SideMenuWidget */
 
 .side-menu-widget-container {
-  background: url("chrome://browser/skin/devtools/background-noise-toolbar.png"), hsl(208,11%,27%);
+  background: url(background-noise-toolbar.png), hsl(208,11%,27%);
   color: #fff;
 }
 
@@ -315,12 +329,12 @@
 }
 
 .side-menu-widget-item.selected > .side-menu-widget-item-arrow:-moz-locale-dir(ltr) {
-  background-image: url("chrome://browser/skin/devtools/itemArrow-ltr.png"), linear-gradient(to right, black, black);
+  background-image: url(itemArrow-ltr.png), linear-gradient(to right, black, black);
   background-position: center right, top right;
 }
 
 .side-menu-widget-item.selected > .side-menu-widget-item-arrow:-moz-locale-dir(rtl) {
-  background-image: url("chrome://browser/skin/devtools/itemArrow-rtl.png"), linear-gradient(to right, black, black);
+  background-image: url(itemArrow-rtl.png), linear-gradient(to right, black, black);
   background-position: center left, top left;
 }
 
@@ -338,13 +352,13 @@
 }
 
 .side-menu-widget-item-other {
-  background: url("chrome://browser/skin/devtools/background-noise-toolbar.png"), hsla(208,11%,27%, 0.65);
+  background: url(background-noise-toolbar.png), hsla(208,11%,27%, 0.65);
   margin: 0 -4px;
   -moz-padding-start: 5px;
 }
 
 .side-menu-widget-item-other.selected {
-  background: url("chrome://browser/skin/devtools/background-noise-toolbar.png"), hsla(208,11%,27%, 0.15);
+  background: url(background-noise-toolbar.png), hsla(208,11%,27%, 0.15);
   box-shadow: inset 0 1px 0 hsla(210,40%,83%,.07),
               inset 0 -1px 0 hsla(210,40%,83%,.07);
 }
@@ -367,7 +381,7 @@
 }
 
 .side-menu-widget-empty-notice-container {
-  background: url("chrome://browser/skin/devtools/background-noise-toolbar.png"), hsl(208,11%,27%);
+  background: url(background-noise-toolbar.png), hsl(208,11%,27%);
   padding: 12px;
   color: #fff;
   font-weight: 600;

@@ -1,3 +1,10 @@
+/* vim:set ts=2 sw=2 sts=2 et: */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* Font for code */
+
 :root {
   font: message-box;
 }
@@ -6,11 +13,13 @@
   font-family: monospace;
 }
 
+/* Toolbar and Toolbar items */
+
 .devtools-toolbar {
   -moz-appearance: none;
   padding: 4px 3px;
   color: hsl(210,30%,85%);
-  background-image: url("chrome://browser/skin/devtools/background-noise-toolbar.png"), linear-gradient(#3e4750, #3e4750);
+  background-image: url(background-noise-toolbar.png), linear-gradient(#3e4750, #3e4750);
   border-bottom: 1px solid #060a0d;
   box-shadow: 0 1px 0 hsla(204,45%,98%,.05) inset, -1px 0 0 hsla(204,45%,98%,.05) inset, 0 -1px 0 hsla(204,45%,98%,.05) inset;
 }
@@ -147,7 +156,7 @@
 }
 
 .devtools-searchinput {
-  background-image: url("chrome://browser/skin/devtools/magnifying-glass.png"), linear-gradient(hsla(210,16%,76%,.15), hsla(210,16%,76%,.35));
+  background-image: url(magnifying-glass.png), linear-gradient(hsla(210,16%,76%,.15), hsla(210,16%,76%,.35));
   background-repeat: no-repeat;
   background-position: 4px center, top left, top left;
   padding-top: 0;
@@ -180,7 +189,7 @@
 .devtools-no-search-result {
   box-shadow: inset 0 0 0 1px hsla(0,68%,6%,.35);
   border-color: hsl(10,70%,40%) hsl(10,75%,37%) hsl(10,80%,35%) !important;
-  background-image: url("chrome://browser/skin/devtools/magnifying-glass.png"), linear-gradient(hsla(1,16%,76%,.45), hsla(1,16%,76%,.75));
+  background-image: url(magnifying-glass.png), linear-gradient(hsla(1,16%,76%,.45), hsla(1,16%,76%,.75));
 }
 
 /* Close button */
@@ -254,7 +263,7 @@
   color: hsl(210,30%,85%);
   margin-bottom: 0;
   padding: 0;
-  background-image: url("chrome://browser/skin/devtools/background-noise-toolbar.png"), linear-gradient(#3e4750, #3e4750);
+  background-image: url(background-noise-toolbar.png), linear-gradient(#3e4750, #3e4750);
   box-shadow: 0 1px 0 hsla(204,45%,98%,.05) inset, -1px 0 0 hsla(204,45%,98%,.05) inset, 0 -1px 0 hsla(204,45%,98%,.05) inset;
   border-width: 0 0 1px 0;
   border-color: hsla(210,8%,5%,.6);
