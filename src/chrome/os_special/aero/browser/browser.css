@@ -3644,6 +3644,14 @@ chatbox {
       border-top-left-radius: 2.5px;
       border-top-right-radius: 2.5px;
     }
+	
+	#main-window[sizemode=normal] #nav-bar[tabsontop=true]:not(:-moz-lwtheme),
+    #main-window[sizemode=normal] #nav-bar[tabsontop=true][collapsed=true]:not([customizing]) + toolbar:not(:-moz-lwtheme),
+    #main-window[sizemode=normal] #nav-bar[tabsontop=true][collapsed=true]:not([customizing]) + #customToolbars + #PersonalToolbar:not(:-moz-lwtheme),
+    #main-window[sizemode=normal][disablechrome] #navigator-toolbox[tabsontop=true]:not(:-moz-lwtheme)::after {
+      border-top-left-radius: 2.5px;
+      border-top-right-radius: 2.5px;
+    }
   }
 
   /* Toolbar shadow behind tabs */
@@ -3654,8 +3662,6 @@ chatbox {
   #main-window[sizemode=normal] #nav-bar[tabsontop=true][collapsed=true]:not([customizing]) + #customToolbars + #PersonalToolbar:not(:-moz-lwtheme),
   #main-window[sizemode=normal][disablechrome] #navigator-toolbox[tabsontop=true]:not(:-moz-lwtheme)::after {
     border-top: 1px solid rgba(10%,10%,10%,.4);
-    border-top-left-radius: 2.5px;
-    border-top-right-radius: 2.5px;
     background-clip: padding-box;
   }
   #main-window[sizemode=normal] #TabsToolbar[tabsontop=true]:not(:-moz-lwtheme) {
