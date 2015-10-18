@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.1.1
+- (Win10) round corner removal on certain UI elements
+- (Win10) shade window background on Pale Moon 26 builds later than b2
+- add Pale Moon urlbar HTTPS shading
+- fix HTML5 mute/unmute icons
+
 ### 1.1.0
 - Pale Moon v26 compatibility
 - fix devtools styles
