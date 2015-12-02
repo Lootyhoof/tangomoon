@@ -18,7 +18,7 @@
         /* Draw XUL caption buttons and background on Win10 */
         @media (-moz-windows-default-theme) {
           #main-window {
-            background-color: hsl(0, 0%, 90%);
+            background-color: hsl(0, 0%, 78%);
           }
         }
 		
