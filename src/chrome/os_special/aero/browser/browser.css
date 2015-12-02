@@ -3467,36 +3467,74 @@ chatbox {
 }
 
 @media (-moz-windows-default-theme) {
-  #navigator-toolbox > toolbar:not(:-moz-lwtheme),
-  #browser-bottombox:not(:-moz-lwtheme) {
-    background-color: hsl(210,75%,92%);
-  }
+  @media (-moz-os-version: windows-vista),
+         (-moz-os-version: windows-win7) {
+    #navigator-toolbox > toolbar:not(:-moz-lwtheme),
+    #browser-bottombox:not(:-moz-lwtheme) {
+        background-color: hsl(210,75%,92%);
+    }
 
-  .tabbrowser-tab:not(:-moz-lwtheme),
-  .tabs-newtab-button:not(:-moz-lwtheme) {
-    background-image: linear-gradient(to top, rgba(10%,10%,10%,.4) 1px, transparent 1px), linear-gradient(transparent, hsla(0,0%,45%,.1) 1px, hsla(0,0%,32%,.2) 80%, hsla(0,0%,0%,.2)),
-                      linear-gradient(hsl(210,75%,92%), hsl(210,75%,92%));
-  }
+    .tabbrowser-tab:not(:-moz-lwtheme),
+    .tabs-newtab-button:not(:-moz-lwtheme) {
+        background-image: linear-gradient(to top, rgba(10%,10%,10%,.4) 1px, transparent 1px), linear-gradient(transparent, hsla(0,0%,45%,.1) 1px, hsla(0,0%,32%,.2) 80%, hsla(0,0%,0%,.2)),
+                          linear-gradient(hsl(210,75%,92%), hsl(210,75%,92%));
+    }
 
-  .tabbrowser-tab:not(:-moz-lwtheme):hover,
-  .tabs-newtab-button:not(:-moz-lwtheme):hover {
-    background-image: linear-gradient(to top, rgba(10%,10%,10%,.4) 1px, transparent 1px), linear-gradient(hsla(0,0%,100%,.3) 1px, hsla(0,0%,75%,.2) 80%, hsla(0,0%,60%,.2)),
-                      linear-gradient(hsl(210,75%,92%), hsl(210,75%,92%));
-  }
+    .tabbrowser-tab:not(:-moz-lwtheme):hover,
+    .tabs-newtab-button:not(:-moz-lwtheme):hover {
+        background-image: linear-gradient(to top, rgba(10%,10%,10%,.4) 1px, transparent 1px), linear-gradient(hsla(0,0%,100%,.3) 1px, hsla(0,0%,75%,.2) 80%, hsla(0,0%,60%,.2)),
+                          linear-gradient(hsl(210,75%,92%), hsl(210,75%,92%));
+    }
 
-  .tabbrowser-tab[selected="true"]:not(:-moz-lwtheme) {
-    background-image: linear-gradient(#fff, rgba(255,255,255,.5) 50%),
-                      linear-gradient(hsl(210,75%,92%), hsl(210,75%,92%));
-  }
+    .tabbrowser-tab[selected="true"]:not(:-moz-lwtheme) {
+        background-image: linear-gradient(#fff, rgba(255,255,255,.5) 50%),
+                          linear-gradient(hsl(210,75%,92%), hsl(210,75%,92%));
+    }
 
-  #main-window[tabsontop=false]:not([disablechrome]) .tabbrowser-tab[selected=true]:not(:-moz-lwtheme) {
-    background-image: linear-gradient(to top, rgba(10%,10%,10%,.4) 1px, transparent 1px),
-                      linear-gradient(#fff, rgba(255,255,255,.5) 50%),
-                      linear-gradient(hsl(210,75%,92%), hsl(210,75%,92%));
-  }
+    #main-window[tabsontop=false]:not([disablechrome]) .tabbrowser-tab[selected=true]:not(:-moz-lwtheme) {
+        background-image: linear-gradient(to top, rgba(10%,10%,10%,.4) 1px, transparent 1px),
+                          linear-gradient(#fff, rgba(255,255,255,.5) 50%),
+                          linear-gradient(hsl(210,75%,92%), hsl(210,75%,92%));
+    }
 
-  #navigator-toolbox:not(:-moz-lwtheme)::after {
-    background-color: #aabccf;
+    #navigator-toolbox:not(:-moz-lwtheme)::after {
+        background-color: #aabccf;
+    }
+  }
+  
+  @media (-moz-os-version: windows-win8),
+         (-moz-os-version: windows-win10) {
+    #navigator-toolbox > toolbar:not(:-moz-lwtheme),
+    #browser-bottombox:not(:-moz-lwtheme) {
+      background-color: hsl(210,0%,92%);
+    }
+
+    .tabbrowser-tab:not(:-moz-lwtheme),
+    .tabs-newtab-button:not(:-moz-lwtheme) {
+      background-image: linear-gradient(to top, rgba(10%,10%,10%,.4) 1px, transparent 1px), linear-gradient(transparent, hsla(0,0%,45%,.1) 1px, hsla(0,0%,32%,.2) 80%, hsla(0,0%,0%,.2)),
+                        linear-gradient(hsl(210,0%,92%), hsl(210,0%,92%));
+    }
+
+    .tabbrowser-tab:not(:-moz-lwtheme):hover,
+    .tabs-newtab-button:not(:-moz-lwtheme):hover {
+      background-image: linear-gradient(to top, rgba(10%,10%,10%,.4) 1px, transparent 1px), linear-gradient(hsla(0,0%,100%,.3) 1px, hsla(0,0%,75%,.2) 80%, hsla(0,0%,60%,.2)),
+                        linear-gradient(hsl(210,0%,92%), hsl(210,0%,92%));
+    }
+
+    .tabbrowser-tab[selected="true"]:not(:-moz-lwtheme) {
+      background-image: linear-gradient(#fff, rgba(255,255,255,.5) 50%),
+                        linear-gradient(hsl(210,0%,92%), hsl(210,0%,92%));
+    }
+
+    #main-window[tabsontop=false]:not([disablechrome]) .tabbrowser-tab[selected=true]:not(:-moz-lwtheme) {
+      background-image: linear-gradient(to top, rgba(10%,10%,10%,.4) 1px, transparent 1px),
+                        linear-gradient(#fff, rgba(255,255,255,.5) 50%),
+                        linear-gradient(hsl(210,0%,92%), hsl(210,0%,92%));
+    }
+
+    #navigator-toolbox:not(:-moz-lwtheme)::after {
+      background-color: #bcbcbc;
+    }
   }
 
   #navigator-toolbox[tabsontop=true] #urlbar:not(:-moz-lwtheme),
@@ -3540,7 +3578,7 @@ chatbox {
   chatbar > chatbox {
     border-color: #A9B7C9;
   }
-  
+
 }
 
 @media (-moz-windows-compositor) {
@@ -3662,6 +3700,14 @@ chatbox {
     margin-top: 2px;
     border-top: 1px solid rgba(10%,10%,10%,.4);
     background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  }
+  
+  @media (-moz-os-version: windows-win10) {
+    /* Remove gradient and make border faded */
+    #navigator-toolbox[tabsontop=false] > #PersonalToolbar:not(:-moz-lwtheme) {
+      border-top: 1px solid rgba(10%,10%,10%,.2);
+      background-image: none;
+    }
   }
 
   #main-window[sizemode=normal] #TabsToolbar[tabsontop=true] {
