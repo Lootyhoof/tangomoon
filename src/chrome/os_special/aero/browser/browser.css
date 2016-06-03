@@ -3545,6 +3545,7 @@ chatbox {
 
 @media (-moz-windows-compositor) {
   #main-window {
+	background-color: transparent;
     -moz-appearance: -moz-win-glass;
   }
 
