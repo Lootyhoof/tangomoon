@@ -1,7 +1,7 @@
 @import url("chrome://global/skin/");
 @import url(chrome://browser/skin/combined_buttons.css);
 @import url(chrome://browser/skin/browser_appmenubutton.css);
-@import url(chrome://browser/skin/browser/restored.css);
+@import url(chrome://browser/skin/restored.css);
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
