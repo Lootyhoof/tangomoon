@@ -14,8 +14,14 @@
 
 #downloadsHistory {
   background: transparent;
-  color: -moz-nativehyperlinktext;
   cursor: pointer;
+}
+
+@media (-moz-os-version: windows-vista),
+       (-moz-os-version: windows-win7) {
+  #downloadsHistory {
+    color: -moz-nativehyperlinktext;
+  }
 }
 
 #downloadsPanel[keyfocus] > #downloadsFooter > #downloadsHistory:focus {
@@ -26,15 +32,6 @@
 #downloadsHistory > .button-box {
   border: none;
   margin: 1em;
-}
-
-@media (-moz-windows-default-theme) {
-  #downloadsPanel[hasdownloads] > #downloadsFooter {
-    background-color: #f1f5fb;
-    box-shadow: 0px 1px 2px rgb(204,214,234) inset;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-  }
 }
 
 /*** Downloads Summary and List items ***/
@@ -71,6 +68,14 @@ richlistitem[type="download"] {
   border-bottom: 1px solid hsla(220,18%,51%,.25);
   background: transparent;
   padding: 8px;
+}
+
+@media (-moz-windows-default-theme) and (-moz-os-version: windows-vista),
+       (-moz-windows-default-theme) and (-moz-os-version: windows-win7) {
+  richlistitem[type="download"] {
+    border: 1px solid transparent;
+    border-bottom: 1px solid hsl(213,40%,90%);
+  }
 }
 
 richlistitem[type="download"]:first-child {
@@ -226,7 +231,7 @@ richlistitem[type="download"]:hover > stack > .downloadButton.downloadRetry:acti
   min-height: 18px;
 }
 
-#downloads-indicator-icon:-moz-lwtheme-brighttext {
+toolbar[brighttext] #downloads-indicator-icon {
   background: -moz-image-rect(url("chrome://browser/skin/Toolbar-inverted.png"),
                               0, 108, 18, 90) center no-repeat;
 }
