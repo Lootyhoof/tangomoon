@@ -164,12 +164,45 @@ richlistitem[type="download"]:first-child {
 /*** Highlighted list items ***/
 
 #downloadsPanel:not([keyfocus]) > #downloadsListBox > richlistitem[type="download"][state="1"][exists]:hover {
-  border-radius: 3px;
-  border-top: 1px solid hsla(0,0%,100%,.2);
-  border-bottom: 1px solid hsla(0,0%,0%,.2);
-  background-color: Highlight;
-  color: HighlightText;
+  background-color: hsla(210,4%,10%,.08);
+  outline: 1px solid hsla(210,4%,10%,.1);
+  outline-offset: -1px;
   cursor: pointer;
+}
+
+#downloadsPanel:not([keyfocus]) > #downloadsListBox > richlistitem[type="download"][state="1"][exists]:hover:active {
+  background-color: hsla(210,4%,10%,.15);
+  outline: 1px solid hsla(210,4%,10%,.15);
+  box-shadow: 0 1px 0 0 hsla(210,4%,10%,.05) inset;
+}
+
+@media (-moz-os-version: windows-vista),
+       (-moz-os-version: windows-win7) {
+  #downloadsPanel:not([keyfocus]) > #downloadsListBox > richlistitem[type="download"][state="1"][exists]:hover {
+    border-radius: 3px;
+    outline: 0;
+    border-top: 1px solid hsla(0,0%,100%,.2);
+    border-bottom: 1px solid hsla(0,0%,0%,.2);
+    background-color: Highlight;
+    color: HighlightText;
+  }
+
+  #downloadsPanel:not([keyfocus]) > #downloadsListBox > richlistitem[type="download"][state="1"][exists]:hover:active {
+    background-color: Highlight;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+@media (-moz-windows-default-theme) and (-moz-os-version: windows-vista),
+       (-moz-windows-default-theme) and (-moz-os-version: windows-win7) {
+  #downloadsPanel:not([keyfocus]) > #downloadsListBox > richlistitem[type="download"][state="1"][exists]:hover {
+    border: 1px solid hsl(213,45%,65%);
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.5) inset,
+                0 1px 0 hsla(0,0%,100%,.3) inset;
+    background-image: linear-gradient(hsl(212,86%,92%), hsl(212,91%,86%));
+    color: black;
+  }
 }
 
 /*** Button icons ***/
