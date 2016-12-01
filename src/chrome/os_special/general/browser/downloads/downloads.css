@@ -12,6 +12,31 @@
   display: none;
 }
 
+#downloadsPanel[hasdownloads] > #emptyDownloads {
+  display: none;
+}
+
+#emptyDownloads {
+  padding: 10px 20px;
+  max-width: 40ch;
+}
+
+#downloadsFooter {
+  background-color: hsla(210,4%,10%,.04);
+  box-shadow: 0 1px 0 hsla(210,4%,10%,.08) inset;
+  transition-duration: 150ms;
+  transition-property: background-color;
+}
+
+#downloadsFooter:hover {
+  background-color: hsla(210,4%,10%,.05);
+}
+
+#downloadsFooter:hover:active {
+  background-color: hsla(210,4%,10%,.1);
+  box-shadow: 0 2px 0 0 hsla(210,4%,10%,.1) inset;
+}
+
 #downloadsHistory {
   background: transparent;
   color: -moz-nativehyperlinktext;
