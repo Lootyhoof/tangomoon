@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.5.1
+- sync devtools styling with default
+- allow extensions to style their own toolbarbutton-badge
+- fix download indicator legibility in certain bright text conditions
+
 ### 1.5.0
 - support PM27's devtools
 - drop PM26 support
