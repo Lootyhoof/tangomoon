@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{d2da57e2-a0d3-4b59-b98e-98e62085837f}</em:id>
-    <em:version>1.5.0</em:version>
+    <em:version>1.5.1</em:version>
     <em:name>Tangomoon</em:name>
     <em:description>Theme with Tango icons for Pale Moon. Fork of "Tangofox" by Haven667</em:description>
     <em:creator>Lootyhoof</em:creator>
