@@ -1,9 +1,130 @@
 skin    browser         Tangomoon	chrome/browser/
-skin    global          Tangomoon	chrome/global/
-skin    mozapps         Tangomoon	chrome/mozapps/
+skin    global-icons    Tangomoon	chrome/global-icons/
+skin    mozapps-icons   Tangomoon	chrome/mozapps-icons/
 
 skin    os_special         Tangomoon	chrome/os_special/general/
 
 skin    os_special         Tangomoon	chrome/os_special/aero/ os=WINNT osversion>=6 
 
 override chrome://homestyle/skin/abouthome.css chrome://browser/skin/abouthome/abouthome.css
+
+# Global icon overrides
+override chrome://global/skin/alerts/notification-48.png chrome://global-icons/skin/alerts/notification-48.png
+
+override chrome://global/skin/console/console-toolbar.png chrome://global-icons/skin/console/console-toolbar.png 
+
+override chrome://global/skin/dirListing/folder.png chrome://global-icons/skin/dirListing/folder.png
+override chrome://global/skin/dirListing/local.png chrome://global-icons/skin/dirListing/local.png
+override chrome://global/skin/dirListing/remote.png chrome://global-icons/skin/dirListing/remote.png
+override chrome://global/skin/dirListing/up.png chrome://global-icons/skin/dirListing/up.png
+
+override chrome://global/skin/icons/blacklist_favicon.png chrome://global-icons/skin/icons/blacklist_favicon.png
+override chrome://global/skin/icons/blacklist_large.png chrome://global-icons/skin/icons/blacklist_large.png
+override chrome://global/skin/icons/close.png chrome://global-icons/skin/icons/close.png
+override chrome://global/skin/icons/Error.png chrome://global-icons/skin/icons/Error.png
+override chrome://global/skin/icons/error-16.png chrome://global-icons/skin/icons/error-16.png
+override chrome://global/skin/icons/error-24.png chrome://global-icons/skin/icons/error-24.png
+override chrome://global/skin/icons/error-48.png chrome://global-icons/skin/icons/error-48.png
+override chrome://global/skin/icons/error-64.png chrome://global-icons/skin/icons/error-64.png
+override chrome://global/skin/icons/find.png chrome://global-icons/skin/icons/find.png
+override chrome://global/skin/icons/find-arrows.png chrome://global-icons/skin/icons/find-arrows.png
+override chrome://global/skin/icons/folder-item.png chrome://global-icons/skin/icons/folder-item.png
+override chrome://global/skin/icons/information-16.png chrome://global-icons/skin/icons/information-16.png
+override chrome://global/skin/icons/information-24.png chrome://global-icons/skin/icons/information-24.png
+override chrome://global/skin/icons/information-32.png chrome://global-icons/skin/icons/information-32.png
+override chrome://global/skin/icons/information-48.png chrome://global-icons/skin/icons/information-48.png
+override chrome://global/skin/icons/information-64.png chrome://global-icons/skin/icons/information-64.png
+override chrome://global/skin/icons/Landscape.png chrome://global-icons/skin/icons/Landscape.png
+override chrome://global/skin/icons/loading_16.png chrome://global-icons/skin/icons/loading_16.png
+override chrome://global/skin/icons/notloading_16.png chrome://global-icons/skin/icons/notloading_16.png
+override chrome://global/skin/icons/Portrait.png chrome://global-icons/skin/icons/Portrait.png
+override chrome://global/skin/icons/Print-preview.png chrome://global-icons/skin/icons/Print-preview.png
+override chrome://global/skin/icons/Question.png chrome://global-icons/skin/icons/Question.png
+override chrome://global/skin/icons/question-16.png chrome://global-icons/skin/icons/question-16.png
+override chrome://global/skin/icons/question-24.png chrome://global-icons/skin/icons/question-24.png
+override chrome://global/skin/icons/question-48.png chrome://global-icons/skin/icons/question-48.png
+override chrome://global/skin/icons/question-64.png chrome://global-icons/skin/icons/question-64.png
+override chrome://global/skin/icons/Search-close.png chrome://global-icons/skin/icons/Search-close.png
+override chrome://global/skin/icons/Search-glass.png chrome://global-icons/skin/icons/Search-glass.png
+override chrome://global/skin/icons/sslWarning.png chrome://global-icons/skin/icons/sslWarning.png
+override chrome://global/skin/icons/Warning.png chrome://global-icons/skin/icons/Warning.png
+override chrome://global/skin/icons/warning-16.png chrome://global-icons/skin/icons/warning-16.png
+override chrome://global/skin/icons/warning-24.png chrome://global-icons/skin/icons/warning-24.png
+override chrome://global/skin/icons/warning-64.png chrome://global-icons/skin/icons/warning-64.png
+override chrome://global/skin/icons/warning-large.png chrome://global-icons/skin/icons/warning-large.png
+override chrome://global/skin/icons/windowControls.png chrome://global-icons/skin/icons/windowControls.png
+override chrome://global/skin/icons/wrap.png chrome://global-icons/skin/icons/wrap.png
+
+override chrome://global/skin/media/error.png chrome://global-icons/skin/media/error.png
+override chrome://global/skin/media/fullscreenButtons.png chrome://global-icons/skin/media/fullscreenButtons.png
+override chrome://global/skin/media/muteButton.png chrome://global-icons/skin/media/muteButton.png
+override chrome://global/skin/media/noAudio.png chrome://global-icons/skin/media/noAudio.png
+override chrome://global/skin/media/pauseButton.png chrome://global-icons/skin/media/pauseButton.png
+override chrome://global/skin/media/playButton.png chrome://global-icons/skin/media/playButton.png
+override chrome://global/skin/media/unmuteButton.png chrome://global-icons/skin/media/unmuteButton.png
+override chrome://global/skin/media/volumeThumb.png chrome://global-icons/skin/media/volumeThumb.png
+
+override chrome://global/skin/printpreview/arrow-left.png chrome://global-icons/skin/printpreview/arrow-left.png
+override chrome://global/skin/printpreview/arrow-left-end.png chrome://global-icons/skin/printpreview/arrow-left-end.png
+override chrome://global/skin/printpreview/arrow-right.png chrome://global-icons/skin/printpreview/arrow-right.png
+override chrome://global/skin/printpreview/arrow-right-end.png chrome://global-icons/skin/printpreview/arrow-right-end.png
+
+override chrome://global/skin/Filepicker.png chrome://global-icons/skin/Filepicker.png
+
+# Mozapps icon overrides
+override chrome://mozapps/skin/downloads/downloadButtons.png chrome://mozapps-icons/skin/downloads/downloadButtons.png
+override chrome://mozapps/skin/downloads/downloadIcon.png chrome://mozapps-icons/skin/downloads/downloadIcon.png
+
+override chrome://mozapps/skin/extensions/alerticon-error.png chrome://mozapps-icons/skin/extensions/alerticon-error.png
+override chrome://mozapps/skin/extensions/alerticon-negative.png chrome://mozapps-icons/skin/extensions/alerticon-negative.png
+override chrome://mozapps/skin/extensions/alerticon-positive.png chrome://mozapps-icons/skin/extensions/alerticon-positive.png
+override chrome://mozapps/skin/extensions/alerticon-warning.png chrome://mozapps-icons/skin/extensions/alerticon-warning.png
+override chrome://mozapps/skin/extensions/cancel.png chrome://mozapps-icons/skin/extensions/cancel.png
+override chrome://mozapps/skin/extensions/category-available.png chrome://mozapps-icons/skin/extensions/category-available.png
+override chrome://mozapps/skin/extensions/category-dictionaries.png chrome://mozapps-icons/skin/extensions/category-dictionaries.png
+override chrome://mozapps/skin/extensions/category-discover.png chrome://mozapps-icons/skin/extensions/category-discover.png
+override chrome://mozapps/skin/extensions/category-extensions.png chrome://mozapps-icons/skin/extensions/category-extensions.png
+override chrome://mozapps/skin/extensions/category-languages.png chrome://mozapps-icons/skin/extensions/category-languages.png
+override chrome://mozapps/skin/extensions/category-plugins.png chrome://mozapps-icons/skin/extensions/category-plugins.png
+override chrome://mozapps/skin/extensions/category-recent.png chrome://mozapps-icons/skin/extensions/category-recent.png
+override chrome://mozapps/skin/extensions/category-search.png chrome://mozapps-icons/skin/extensions/category-search.png
+override chrome://mozapps/skin/extensions/category-service.png chrome://mozapps-icons/skin/extensions/category-service.png
+override chrome://mozapps/skin/extensions/category-themes.png chrome://mozapps-icons/skin/extensions/category-themes.png
+override chrome://mozapps/skin/extensions/dictionaryGeneric.png chrome://mozapps-icons/skin/extensions/dictionaryGeneric.png
+override chrome://mozapps/skin/extensions/dictionaryGeneric-16.png chrome://mozapps-icons/skin/extensions/dictionaryGeneric-16.png
+override chrome://mozapps/skin/extensions/extensionGeneric.png chrome://mozapps-icons/skin/extensions/extensionGeneric.png
+override chrome://mozapps/skin/extensions/extensionGeneric-16.png chrome://mozapps-icons/skin/extensions/extensionGeneric-16.png
+override chrome://mozapps/skin/extensions/heart.png chrome://mozapps-icons/skin/extensions/heart.png
+override chrome://mozapps/skin/extensions/localeGeneric.png chrome://mozapps-icons/skin/extensions/localeGeneric.png
+override chrome://mozapps/skin/extensions/navigation.png chrome://mozapps-icons/skin/extensions/navigation.png
+override chrome://mozapps/skin/extensions/rating-not-won.png chrome://mozapps-icons/skin/extensions/rating-not-won.png
+override chrome://mozapps/skin/extensions/rating-won.png chrome://mozapps-icons/skin/extensions/rating-won.png
+override chrome://mozapps/skin/extensions/themeGeneric.png chrome://mozapps-icons/skin/extensions/themeGeneric.png
+override chrome://mozapps/skin/extensions/themeGeneric-16.png chrome://mozapps-icons/skin/extensions/themeGeneric-16.png
+override chrome://mozapps/skin/extensions/utilities.svg#utilities chrome://mozapps-icons/skin/extensions/utilities.png
+
+override chrome://mozapps/skin/passwordmgr/key.png chrome://mozapps-icons/skin/passwordmgr/key.png
+override chrome://mozapps/skin/passwordmgr/key-16.png chrome://mozapps-icons/skin/passwordmgr/key-16.png
+override chrome://mozapps/skin/passwordmgr/key-64.png chrome://mozapps-icons/skin/passwordmgr/key-64.png
+
+override chrome://mozapps/skin/places/defaultFavicon.png chrome://mozapps-icons/skin/places/defaultFavicon.png
+
+override chrome://mozapps/skin/plugins/contentPluginActivate.png chrome://mozapps-icons/skin/plugins/contentPluginActivate.png
+override chrome://mozapps/skin/plugins/contentPluginBlocked.png chrome://mozapps-icons/skin/plugins/contentPluginBlocked.png
+override chrome://mozapps/skin/plugins/contentPluginClose.png chrome://mozapps-icons/skin/plugins/contentPluginClose.png
+override chrome://mozapps/skin/plugins/contentPluginCrashed.png chrome://mozapps-icons/skin/plugins/contentPluginCrashed.png
+override chrome://mozapps/skin/plugins/contentPluginDisabled.png chrome://mozapps-icons/skin/plugins/contentPluginDisabled.png
+override chrome://mozapps/skin/plugins/contentPluginDownload.png chrome://mozapps-icons/skin/plugins/contentPluginDownload.png
+override chrome://mozapps/skin/plugins/notifyPluginCrashed.png chrome://mozapps-icons/skin/plugins/notifyPluginCrashed.png
+override chrome://mozapps/skin/plugins/notifyPluginGeneric.png chrome://mozapps-icons/skin/plugins/notifyPluginGeneric.png
+override chrome://mozapps/skin/plugins/pluginBlocked.png chrome://mozapps-icons/skin/plugins/pluginBlocked.png
+override chrome://mozapps/skin/plugins/pluginBlocked-64.png chrome://mozapps-icons/skin/plugins/pluginBlocked-64.png
+override chrome://mozapps/skin/plugins/pluginGeneric.png chrome://mozapps-icons/skin/plugins/pluginGeneric.png
+override chrome://mozapps/skin/plugins/pluginGeneric-16.png chrome://mozapps-icons/skin/plugins/pluginGeneric-16.png
+override chrome://mozapps/skin/plugins/pluginHelp-16.png chrome://mozapps-icons/skin/plugins/pluginHelp-16.png
+
+override chrome://mozapps/skin/profile/profileicon.png chrome://mozapps-icons/skin/profile/profileicon.png
+
+override chrome://mozapps/skin/update/downloadButtons.png chrome://mozapps-icons/skin/profile/downloadButtons.png
+
+override chrome://mozapps/skin/xpinstall/xpinstallItemGeneric.png chrome://mozapps-icons/skin/xpinstall/xpinstallItemGeneric.png
