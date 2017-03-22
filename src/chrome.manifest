@@ -5,3 +5,5 @@ skin    mozapps         Tangomoon	chrome/mozapps/
 skin    os_special         Tangomoon	chrome/os_special/general/
 
 skin    os_special         Tangomoon	chrome/os_special/aero/ os=WINNT osversion>=6 
+
+override chrome://homestyle/skin/abouthome.css chrome://browser/skin/abouthome/abouthome.css
