@@ -57,13 +57,12 @@ override chrome://global/skin/icons/windowControls.png chrome://global-icons/ski
 override chrome://global/skin/icons/wrap.png chrome://global-icons/skin/icons/wrap.png
 
 override chrome://global/skin/media/error.png chrome://global-icons/skin/media/error.png
-override chrome://global/skin/media/fullscreenButtons.png chrome://global-icons/skin/media/fullscreenButtons.png
+override chrome://global/skin/media/fullscreenButton.png chrome://global-icons/skin/media/fullscreenButton.png
 override chrome://global/skin/media/muteButton.png chrome://global-icons/skin/media/muteButton.png
 override chrome://global/skin/media/noAudio.png chrome://global-icons/skin/media/noAudio.png
 override chrome://global/skin/media/pauseButton.png chrome://global-icons/skin/media/pauseButton.png
 override chrome://global/skin/media/playButton.png chrome://global-icons/skin/media/playButton.png
 override chrome://global/skin/media/unmuteButton.png chrome://global-icons/skin/media/unmuteButton.png
-override chrome://global/skin/media/volumeThumb.png chrome://global-icons/skin/media/volumeThumb.png
 
 override chrome://global/skin/printpreview/arrow-left.png chrome://global-icons/skin/printpreview/arrow-left.png
 override chrome://global/skin/printpreview/arrow-left-end.png chrome://global-icons/skin/printpreview/arrow-left-end.png
