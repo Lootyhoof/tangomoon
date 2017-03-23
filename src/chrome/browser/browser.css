@@ -18,11 +18,8 @@
   --tab-hover-background: linear-gradient(hsla(0,0%,100%,.3) 1px, hsla(0,0%,75%,.2) 80%, hsla(0,0%,60%,.2));
   --tab-selected-background: #fff;
   --tab-selected-highlight: rgba(255,255,255,.7); 
-  
-  --toolbar-addonbar-background: linear-gradient(rgba(0,0,0,.15) 1px, rgba(255,255,255,.15) 1px);
+
   --toolbar-custom-color: hsl(210,75%,92%);
-  --toolbar-glass-active-color: rgb(37, 44, 51);
-  --toolbar-glass-inactive-color: rgb(102, 102, 102);
   --toolbar-highlight-top: rgba(255,255,255,.5);
   --toolbar-highlight-bottom: rgba(255,255,255,0);
   --toolbar-shadow-color: rgba(10%,10%,10%,.4);
@@ -2663,7 +2660,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
   border-top-style: none;
   border-bottom-style: none;
   padding-top: 1px;
-  background-image: var(--toolbar-addonbar-background);
+  background-image: linear-gradient(rgba(0,0,0,.15) 1px, rgba(255,255,255,.15) 1px);
   background-size: 100% 2px;
   background-repeat: no-repeat;
 }
@@ -3757,11 +3754,11 @@ html|*#gcli-output-frame {
     /* Artificially draw window borders that are covered by lwtheme, see bug 591930. */
     #main-window[sizemode="normal"] > #titlebar > #titlebar-content:-moz-lwtheme {
       border-top: 2px solid;
-      -moz-border-top-colors: var(--toolbar-glass-active-color) rgba(255,255,255,.6);
+      -moz-border-top-colors: rgb(37, 44, 51) rgba(255,255,255,.6);
     }
 
     #main-window[sizemode="normal"] > #titlebar > #titlebar-content:-moz-lwtheme:-moz-window-inactive {
-      -moz-border-top-colors: var(--toolbar-glass-inactive-color) rgba(255,255,255,.6);
+      -moz-border-top-colors: rgb(102, 102, 102) rgba(255,255,255,.6);
     }
 
     #main-window[sizemode="normal"] > #titlebar > #titlebar-content > #appmenu-button-container:-moz-lwtheme {
