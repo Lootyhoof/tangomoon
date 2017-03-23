@@ -2,11 +2,12 @@ skin    browser         Tangomoon	chrome/browser/
 skin    global-icons    Tangomoon	chrome/global-icons/
 skin    mozapps-icons   Tangomoon	chrome/mozapps-icons/
 
-skin    os_special         Tangomoon	chrome/os_special/general/
-
-skin    os_special         Tangomoon	chrome/os_special/aero/ os=WINNT osversion>=6 
+skin    os         Tangomoon	chrome/os/linux/ os=Linux
+skin    os         Tangomoon  chrome/os/darwin/ os=Darwin
 
 override chrome://homestyle/skin/abouthome.css chrome://browser/skin/abouthome/abouthome.css
+
+style chrome://global/content/console.xul chrome://global-icons/skin/console/console.css
 
 # Global icon overrides
 override chrome://global/skin/alerts/notification-48.png chrome://global-icons/skin/alerts/notification-48.png

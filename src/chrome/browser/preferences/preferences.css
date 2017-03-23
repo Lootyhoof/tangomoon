@@ -4,18 +4,19 @@
 }
 
 .paneSelector {
+  -moz-appearance: none;
   color: white;
   background-image: url("chrome://browser/skin/preferences/background.png");
 }
 
 radio[pane] {
   -moz-appearance: none;
+  color: white;
   background-color: transparent;
 }
 
 radio[pane]:hover {
   background-image: url("chrome://browser/skin/preferences/hover.png");
-  color: white;
 }
 
 radio[pane][selected="true"] {

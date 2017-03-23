@@ -1,0 +1,39 @@
+#toolbar-menubar {
+  -moz-appearance: menubar !important;
+}
+
+#TabsToolbar[tabsontop=true]:not(:-moz-lwtheme) {
+  -moz-appearance: menubar;
+  color: -moz-menubartext;
+}
+
+#appmenu-toolbar-button {
+  -moz-appearance: none;
+  border: none;
+  padding: 3px 5px 3px 3px !important;
+  list-style-image: url("chrome://browser/skin/appmenu.png");
+  -moz-image-region: auto;
+}
+
+#appmenu-toolbar-button > label,
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker {
+  display: none !important;
+}
+
+.toolbarbutton-1 > .toolbarbutton-menu-dropmarker,
+.toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker {
+  list-style-image: none !important;
+}
+
+.close-icon {
+  list-style-image: url("chrome://global/skin/icons/close.png");
+  -moz-image-region: rect(0, 16px, 16px, 0);
+}
+
+.close-icon:hover {
+  -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+.close-icon:hover:active {
+  -moz-image-region: rect(0, 48px, 16px, 32px);
+}
