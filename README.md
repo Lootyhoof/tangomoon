@@ -1,7 +1,7 @@
 # Tangomoon
 ![Preview](http://i65.tinypic.com/2l8yn0j.png)
 
-Fork of the theme [Tangofox] (https://addons.mozilla.org/en-US/firefox/addon/tangofox/) by Haven667 for Pale Moon.
+Fork of the theme [Tangofox](https://addons.mozilla.org/firefox/addon/tangofox/) by Haven667 for Pale Moon.
 
 For about:home and PDF.js styling, apply the file "extras.css" in the styles folder into userContent.css or Stylish.
 
