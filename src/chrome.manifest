@@ -5,7 +5,7 @@ skin    mozapps-icons   Tangomoon	chrome/mozapps-icons/
 skin    os         Tangomoon	chrome/os/linux/ os=Linux
 skin    os         Tangomoon  chrome/os/darwin/ os=Darwin
 
-override chrome://homestyle/skin/abouthome.css chrome://browser/skin/abouthome/abouthome.css
+override chrome://abouthome/skin/abouthome.css chrome://browser/skin/abouthome/abouthome.css
 
 style chrome://global/content/console.xul chrome://global-icons/skin/console/console.css
 
