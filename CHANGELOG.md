@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.0.0
+- add about:home styling
+- rely on default theme for styling platform-specific global stylings
+- use CSS variables to provide a simpler form of customisation for end-users
+- major cleanup
+
 ### 1.5.1
 - sync devtools styling with default
 - allow extensions to style their own toolbarbutton-badge
