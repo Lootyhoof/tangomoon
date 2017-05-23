@@ -94,6 +94,7 @@ override chrome://mozapps/skin/extensions/dictionaryGeneric.png chrome://mozapps
 override chrome://mozapps/skin/extensions/dictionaryGeneric-16.png chrome://mozapps-icons/skin/extensions/dictionaryGeneric-16.png
 override chrome://mozapps/skin/extensions/extensionGeneric.png chrome://mozapps-icons/skin/extensions/extensionGeneric.png
 override chrome://mozapps/skin/extensions/extensionGeneric-16.png chrome://mozapps-icons/skin/extensions/extensionGeneric-16.png
+override chrome://mozapps/skin/extensions/extensionGeneric-48.png chrome://mozapps-icons/skin/extensions/extensionGeneric-48.png
 override chrome://mozapps/skin/extensions/extensionGeneric-16.png#-moz-resolution=16,16 chrome://mozapps-icons/skin/extensions/extensionGeneric-16.png
 override chrome://mozapps/skin/extensions/heart.png chrome://mozapps-icons/skin/extensions/heart.png
 override chrome://mozapps/skin/extensions/localeGeneric.png chrome://mozapps-icons/skin/extensions/localeGeneric.png
@@ -122,6 +123,7 @@ override chrome://mozapps/skin/plugins/pluginBlocked.png chrome://mozapps-icons/
 override chrome://mozapps/skin/plugins/pluginBlocked-64.png chrome://mozapps-icons/skin/plugins/pluginBlocked-64.png
 override chrome://mozapps/skin/plugins/pluginGeneric.png chrome://mozapps-icons/skin/plugins/pluginGeneric.png
 override chrome://mozapps/skin/plugins/pluginGeneric-16.png chrome://mozapps-icons/skin/plugins/pluginGeneric-16.png
+override chrome://mozapps/skin/plugins/pluginGeneric-48.png chrome://mozapps-icons/skin/plugins/pluginGeneric-48.png
 override chrome://mozapps/skin/plugins/pluginHelp-16.png chrome://mozapps-icons/skin/plugins/pluginHelp-16.png
 
 override chrome://mozapps/skin/profile/profileicon.png chrome://mozapps-icons/skin/profile/profileicon.png
