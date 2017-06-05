@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.1.0
+- sync about:support styling with default
+- add image document favicon when viewing standalone images
+
 ### 2.0.0
 - add about:home styling
 - rely on default theme for styling platform-specific global stylings
