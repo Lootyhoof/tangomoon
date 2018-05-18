@@ -40,7 +40,6 @@
   --toolbarbutton-border-radius: 2px;
   
   --toolbarbutton-image: url("chrome://browser/skin/Toolbar.png");
-  --toolbarbutton-inverted-image: url("chrome://browser/skin/Toolbar-inverted.png");
 }
 
 :root:-moz-lwtheme {
@@ -658,10 +657,6 @@ menuitem.bookmark-item {
   list-style-image: var(--toolbarbutton-image);
 }
 
-.toolbarbutton-1:-moz-lwtheme-brighttext {
-  list-style-image: var(--toolbarbutton-inverted-image);
-}
-
 .toolbarbutton-1[disabled=true] > .toolbarbutton-icon,
 .toolbarbutton-1[disabled=true] > .toolbarbutton-menu-dropmarker,
 .toolbarbutton-1[disabled=true] > .toolbarbutton-menubutton-dropmarker,
@@ -1011,9 +1006,6 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 #home-button.bookmark-item {
   list-style-image: var(--toolbarbutton-image);
 }
-#home-button.bookmark-item:-moz-lwtheme-brighttext {
-  list-style-image: var(--toolbarbutton-inverted-image);
-}
 #home-button {
   -moz-image-region: rect(0, 90px, 18px, 72px);
 }
@@ -1034,10 +1026,6 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 
 #bookmarks-menu-button.bookmark-item {
   list-style-image: var(--toolbarbutton-image);
-}
-
-#bookmarks-menu-button.bookmark-item:-moz-lwtheme-brighttext {
-  list-style-image: var(--toolbarbutton-inverted-image);
 }
 
 #print-button {
