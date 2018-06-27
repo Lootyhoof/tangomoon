@@ -25,6 +25,7 @@ override chrome://global/skin/dirListing/up.png chrome://global-icons/skin/dirLi
 override chrome://global/skin/icons/blacklist_favicon.png chrome://global-icons/skin/icons/blacklist_favicon.png
 override chrome://global/skin/icons/blacklist_large.png chrome://global-icons/skin/icons/blacklist_large.png
 override chrome://global/skin/icons/close.png chrome://global-icons/skin/icons/close.png
+override chrome://global/skin/icons/close.svg chrome://global-icons/skin/icons/close.png
 override chrome://global/skin/icons/Error.png chrome://global-icons/skin/icons/Error.png
 override chrome://global/skin/icons/error-16.png chrome://global-icons/skin/icons/error-16.png
 override chrome://global/skin/icons/error-24.png chrome://global-icons/skin/icons/error-24.png
