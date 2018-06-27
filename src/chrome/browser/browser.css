@@ -1605,10 +1605,16 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
   list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow.png");
 }
 
-:-moz-any(#TabsToolbar, #nav-bar[tabsontop=false], #toolbar-menubar) > #alltabs-button:-moz-system-metric(windows-compositor):not(:-moz-lwtheme),
-:-moz-any(#TabsToolbar, #nav-bar[tabsontop=false], #toolbar-menubar) > toolbarpaletteitem > #alltabs-button:-moz-system-metric(windows-compositor):not(:-moz-lwtheme),
-#alltabs-button:-moz-lwtheme-brighttext {
+toolbar[brighttext] #alltabs-button {
   list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow-inverted.png");
+}
+
+@media (-moz-windows-glass) {
+  :-moz-any(#TabsToolbar[tabsontop=true], #nav-bar[tabsontop=false], #toolbar-menubar) > #alltabs-button:-moz-system-metric(windows-compositor):not(:-moz-lwtheme),
+  :-moz-any(#TabsToolbar[tabsontop=true], #nav-bar[tabsontop=false], #toolbar-menubar) > toolbarpaletteitem > #alltabs-button:-moz-system-metric(windows-compositor):not(:-moz-lwtheme),
+  #alltabs-button:-moz-lwtheme-brighttext {
+    list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow-inverted.png");
+  }
 }
 
 #alltabs-button > .toolbarbutton-icon {
