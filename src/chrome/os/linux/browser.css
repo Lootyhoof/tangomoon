@@ -1,4 +1,11 @@
-#toolbar-menubar {
+:root {
+  --appmenu-background: url("chrome://browser/skin/icon.png") no-repeat, linear-gradient(rgb(125,166,210), rgb(97,148,203) 95%);
+  --appmenu-border-radius: 4px;
+  --appmenu-border: rgba(53,102,164,.9);
+  --appmenu-box-shadow: 0 1px 0 rgba(255,255,255,.25) inset, 0 0 0 1px rgba(255,255,255,.25) inset;
+}
+
+#toolbar-menubar:not(:-moz-lwtheme) {
   -moz-appearance: menubar !important;
 }
 
@@ -7,16 +14,77 @@
   color: -moz-menubartext;
 }
 
+/* ::::: app menu button ::::: */
+
 #appmenu-toolbar-button {
   -moz-appearance: none;
-  border: none;
-  padding: 3px 5px 3px 3px !important;
-  list-style-image: url("chrome://browser/skin/appmenu.png");
-  -moz-image-region: auto;
+  background-clip: padding-box;
+  background: var(--appmenu-background);
+  border-radius: var(--appmenu-border-radius);
+  border: 1px solid;
+  border-color: var(--appmenu-border);
+  color: white;
+  text-shadow: 0 0 1px rgba(0,0,0,.7),
+               0 1px 1.5px rgba(0,0,0,.5);
+  box-shadow: var(--appmenu-box-shadow);
+  font-weight: bold;
+  padding: 0.1em 0.1em .05em 0.5em;
+  margin: 2px;
 }
 
-#appmenu-toolbar-button > label,
+#main-window[sizemode=maximized] #appmenu-toolbar-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+  margin-left: 0px;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button {
+  --appmenu-background: url("chrome://browser/skin/private_icon.png") no-repeat, linear-gradient(rgb(136,138,133), rgb(85,87,83) 95%);
+  --appmenu-border: rgba(46,52,54,.9);
+}
+
+#appmenu-toolbar-button:hover:not(:active):not([open]) {
+  --appmenu-background: url("chrome://browser/skin/icon.png") no-repeat, radial-gradient(circle farthest-side at center bottom, rgba(145,186,210,.5) 10%, rgba(117,168,223,0) 70%), radial-gradient(circle farthest-side at center bottom, rgb(95,136,180), rgba(183,205,228,0)), linear-gradient(rgb(105,146,190), rgb(77,128,183) 95%);
+  --appmenu-border: rgba(53,102,164,.9);
+  --appmenu-box-shadow: 0 1px 0 rgba(255,255,255,.1) inset, 0 0 1.5px 1px rgba(155,196,240,.7) inset, 0 -1px 0 rgba(155,196,240,.5) inset;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button:hover:not(:active):not([open]) {
+  --appmenu-background: url("chrome://browser/skin/private_icon.png") no-repeat, radial-gradient(circle farthest-side at center bottom, rgba(156,158,153,.5) 10%, rgba(105,107,103,0) 70%), radial-gradient(circle farthest-side at center bottom, rgb(106,108,103), rgba(125,127,123,0)), linear-gradient(rgb(116,118,113), rgb(65,67,63) 95%);
+  --appmenu-border: rgba(46,52,54,.9);
+  --appmenu-box-shadow: 0 1px 0 rgba(255,255,255,.1) inset, 0 0 2px 1px rgba(166,168,163,.7) inset, 0 -1px 0 rgba(166,168,163,.5) inset;
+}
+
+#appmenu-toolbar-button:hover:active,
+#appmenu-toolbar-button[open] {
+  --appmenu-background: url("chrome://browser/skin/icon.png") no-repeat, linear-gradient(rgb(105,146,190), rgb(77,128,183) 95%);
+  --appmenu-box-shadow: 0 2px 3px rgba(0,0,0,.4) inset, 0 1px 1px rgba(0,0,0,.2) inset;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button:hover:active,
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button[open] {
+  --appmenu-background: url("chrome://browser/skin/private_icon.png") no-repeat, linear-gradient(rgb(116,118,113), rgb(65,67,63) 95%);
+}
+
+#appmenu-toolbar-button > .button-box {
+  border-style: none;
+  padding: 0;
+}
+
 #appmenu-toolbar-button > .toolbarbutton-menu-dropmarker {
+  -moz-appearance: none !important;
+  list-style-image: url(chrome://browser/skin/appmenu-dropmarker.png);
+  width: auto;
+  height: auto;
+  padding: 0 0 0 16px;
+  margin: 0;
+  -moz-margin-start: .5em;
+}
+
+#appmenu-toolbar-button > label {
   display: none !important;
 }
 
@@ -36,4 +104,13 @@
 
 .close-icon:hover:active {
   -moz-image-region: rect(0, 48px, 16px, 32px);
+}
+
+/* Private browsing indicator */
+
+#main-window[privatebrowsingmode=temporary] #toolbar-menubar[autohide="false"] ~ #TabsToolbar::before {
+  display: -moz-box;
+  content: "";
+  background: url("chrome://browser/skin/privateBrowsing.png") center no-repeat;
+  width: 40px;
 }
