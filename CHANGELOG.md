@@ -1,5 +1,15 @@
 # Changelog
 
+### 2.2.0
+- initial Pale Moon 28 support
+- add PM28 newtab styling
+- add tabbrowser findbar styling
+- improve about:permissions sizing
+- fix disappearing titlebar in private and lwtheme modes on macOS
+- align vars with other themes
+- Linux: improve appmenu appearance
+- add private browsing indicators on Linux and macOS
+
 ### 2.1.0
 - sync about:support styling with default
 - add image document favicon when viewing standalone images
