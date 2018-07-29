@@ -111,6 +111,6 @@
 #main-window[privatebrowsingmode=temporary] #toolbar-menubar[autohide="false"] ~ #TabsToolbar::before {
   display: -moz-box;
   content: "";
-  background: url("chrome://browser/skin/privateBrowsing.png") center no-repeat;
+  background: url("chrome://browser/skin/Privacy-16.png") center no-repeat;
   width: 40px;
 }
