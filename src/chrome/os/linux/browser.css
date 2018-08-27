@@ -81,7 +81,7 @@
   height: auto;
   padding: 0 0 0 16px;
   margin: 0;
-  -moz-margin-start: .5em;
+  margin-inline-start: .5em;
 }
 
 #appmenu-toolbar-button > label {

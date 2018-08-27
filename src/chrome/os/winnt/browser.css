@@ -92,7 +92,7 @@
   height: auto;
   padding: 0;
   margin: 0;
-  -moz-margin-start: .5em;
+  margin-inline-start: .5em;
 }
 
 @media (-moz-windows-default-theme) {
@@ -104,13 +104,13 @@
   #appmenuPrimaryPane {
     background-color: rgba(255,255,255,0.5);
     padding: 2px;
-    -moz-border-end: none;
+    border-inline-end: none;
   }
   #appmenuSecondaryPane {
     background-color: #f1f5fb;
     box-shadow: 1px 0 2px rgb(204,214,234) inset;
-    -moz-padding-start: 3px;
-    -moz-padding-end: 2px;
+    padding-inline-start: 3px;
+    padding-inline-end: 2px;
     padding-top: 2px;
     padding-bottom: 2px;
     font-family: "Segoe UI Semibold", "Segoe UI", sans-serif;
@@ -228,7 +228,7 @@
     -moz-appearance: none;
     margin-top: 3px;
     margin-bottom: 3px;
-    -moz-margin-start: 30px;
+    margin-inline-start: 30px;
     padding: 0;
     border-top: 1px solid #d6e5f5;
     border-bottom: none;
@@ -236,17 +236,17 @@
 
   @media (min-resolution: 1.25dppx) {
     .appmenu-menuseparator {
-      -moz-margin-start: 25px;
+      margin-inline-start: 25px;
     }
   }
   @media (min-resolution: 1.5dppx) {
     .appmenu-menuseparator {
-      -moz-margin-start: 24px;
+      margin-inline-start: 24px;
     }
   }
   @media (min-resolution: 2dppx) {
     .appmenu-menuseparator {
-      -moz-margin-start: 22px;
+      margin-inline-start: 22px;
     }
   }
 
@@ -310,7 +310,7 @@
 
 @media not all and (-moz-windows-classic) {
   #titlebar-min {
-    -moz-margin-end: 2px;
+    margin-inline-end: 2px;
   }
 }
 
@@ -340,7 +340,7 @@
 
   #appmenu-popup {
     margin-top: -1px;
-    -moz-margin-start: 1px;
+    margin-inline-start: 1px;
   }
 
   .panel-promo-message {
@@ -396,19 +396,19 @@
 
   .sidebar-splitter {
     border: 0;
-    -moz-border-end: 1px solid #A9B7C9;
+    border-inline-end: 1px solid #A9B7C9;
     min-width: 0;
     width: 3px;
     background-color: transparent;
-    -moz-margin-start: -3px;
+    margin-inline-start: -3px;
     position: relative;
   }
 
   #appcontent ~ .sidebar-splitter {
-    -moz-border-start: 1px solid #A9B7C9;
-    -moz-border-end: none;
-    -moz-margin-start: 0;
-    -moz-margin-end: -3px;
+    border-inline-start: 1px solid #A9B7C9;
+    border-inline-end: none;
+    margin-inline-start: 0;
+    margin-inline-end: -3px;
   }
 
   .menu-accel,
@@ -1088,10 +1088,10 @@
       border: 1px solid transparent;
   }
   .splitmenu-menuitem {
-      -moz-margin-end: 0;
+      margin-inline-end: 0;
   }
   .splitmenu-menu {
-      -moz-margin-start: -1px;
+      margin-inline-start: -1px;
   }
   .splitmenu-menuitem:-moz-locale-dir(ltr),
   .splitmenu-menu:-moz-locale-dir(rtl) {
@@ -1105,11 +1105,11 @@
   }
 
   .splitmenu-menuitem > .menu-text {
-      -moz-margin-start: 1px !important;
-      -moz-margin-end: 3px !important;
+      margin-inline-start: 1px !important;
+      margin-inline-end: 3px !important;
   }
   .splitmenu-menu > .menu-right {
-      -moz-margin-end: -3px;
+      margin-inline-end: -3px;
   }
 
   .splitmenu-menuitem[iconic],
@@ -1119,11 +1119,11 @@
   .splitmenu-menuitem[iconic] > .menu-iconic-left {
       margin-top: -3px;
       margin-bottom: -2px;
-      -moz-margin-start: -1px;
+      margin-inline-start: -1px;
   }
   .splitmenu-menuitem[iconic] > .menu-iconic-text {
-      -moz-margin-start: 2px !important;
-      -moz-margin-end: 3px !important;
+      margin-inline-start: 2px !important;
+      margin-inline-end: 3px !important;
   }
   .splitmenu-menu[iconic] > .menu-right {
       margin-top: -1px;
