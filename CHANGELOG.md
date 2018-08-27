@@ -1,5 +1,10 @@
 # Changelog
 
+### 2.3.0
+- use non-prefixed -inline syntax
+- cleanup internal files
+- mark as compatible with Pale Moon 28 only
+
 ### 2.2.0
 - initial Pale Moon 28 support
 - add PM28 newtab styling
