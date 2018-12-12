@@ -1536,6 +1536,75 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
   -moz-image-region: rect(0, 64px, 16px, 48px);
 }
 
+/* Tab icon overlay */
+
+.tab-icon-overlay {
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  margin-inline-start: -15px;
+  margin-inline-end: -1px;
+  position: relative;
+}
+
+/* Tab sound indicator */
+
+.tab-icon-sound {
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+
+.allTabs-endimage[soundplaying],
+.tab-icon-sound[soundplaying],
+.tab-icon-overlay[soundplaying] {
+  list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio_playing.png");
+}
+
+.allTabs-endimage[muted],
+.tab-icon-sound[muted],
+.tab-icon-overlay[muted] {
+  list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio_muted.png");
+}
+
+.allTabs-endimage[blocked],
+.tab-icon-sound[blocked],
+.tab-icon-overlay[blocked] {
+  list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio_blocked.png");
+}
+
+.allTabs-endimage[soundplaying]:hover,
+.tab-icon-sound[soundplaying]:hover,
+.tab-icon-overlay[soundplaying]:hover,
+.allTabs-endimage[muted]:hover,
+.tab-icon-sound[muted]:hover,
+.tab-icon-overlay[muted]:hover,
+.allTabs-endimage[blocked]:hover,
+.tab-icon-sound[blocked]:hover,
+.tab-icon-overlay[blocked]:hover {
+  filter: saturate(150%) brightness(110%);
+}
+
+.allTabs-endimage[soundplaying]:hover:active,
+.tab-icon-sound[soundplaying]:hover:active,
+.tab-icon-overlay[soundplaying]:hover:active,
+.allTabs-endimage[muted]:hover:active,
+.tab-icon-sound[muted]:hover:active,
+.tab-icon-overlay[muted]:hover:active,
+.allTabs-endimage[blocked]:hover:active,
+.tab-icon-sound[blocked]:hover:active,
+.tab-icon-overlay[blocked]:hover:active {
+  filter: brightness(75%);
+}
+
+.tab-icon-sound[soundplaying-scheduledremoval]:not([muted]):not(:hover),
+.tab-icon-overlay[soundplaying-scheduledremoval]:not([muted]):not(:hover) {
+  transition: opacity .3s linear var(--soundplaying-removal-delay);
+  opacity: 0;
+}
+
 /* Tab scrollbox arrow, tabstrip new tab and all-tabs buttons */
 
 .tabbrowser-arrowscrollbox > .scrollbutton-up,
