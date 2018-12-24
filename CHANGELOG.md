@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.4.0
+- add tab audio indicators for Pale Moon 28.3.0+
+- update in-browser developer tools
+
 ### 2.3.0
 - use non-prefixed -inline syntax
 - cleanup internal files
