@@ -1,5 +1,5 @@
 # Tangomoon
-![Preview](http://i65.tinypic.com/2l8yn0j.png)
+![Preview](https://i.imgur.com/tVe1eMK.png)
 
 Fork of the theme "Tangofox" by Haven667 for Pale Moon.
 
