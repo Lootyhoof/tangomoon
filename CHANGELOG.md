@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.4.2
+- use Pale Moon's built-in urlbar RSS button
+
 ### 2.4.1
 - small version bump for Pale Moon 29.0 compatibility (no code changes)
 
