@@ -1,0 +1,50 @@
+  /* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+ /* ::::: attachment view ::::: */
+
+ #attachmentToggle {
+  /* Override button appearance */
+  -moz-appearance: none;
+  min-width: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  -moz-user-focus: normal;
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd.png");
+}
+
+#attachmentToggle[checked="true"] {
+  list-style-image: url("chrome://global/skin/tree/twisty-open.png");
+}
+
+/* ::::: view expand and collapse twisties  ::::: */
+
+.expandHeaderViewButton {
+  list-style-image: url("chrome://global/skin/tree/twisty-open.png");
+}
+
+#attachmentToggle:hover {
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd.png-hover");
+}
+
+#attachmentToggle[checked="true"]:hover {
+  list-style-image: url("chrome://global/skin/tree/twisty-open.png-hover");
+}
+
+#attachmentToggle:-moz-locale-dir(rtl) {
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd.png-rtl");
+}
+
+#attachmentToggle[checked="true"]:-moz-locale-dir(rtl) {
+  list-style-image: url("chrome://global/skin/tree/twisty-open.png-rtl");
+}
+
+#attachmentToggle:hover:-moz-locale-dir(rtl) {
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd.png-hover-rtl");
+}
+
+#attachmentToggle[checked="true"]:hover:-moz-locale-dir(rtl) {
+  list-style-image: url("chrome://global/skin/tree/twisty-open.png-hover-rtl");
+}
