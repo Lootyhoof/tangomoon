@@ -1488,7 +1488,7 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
   background-image: var(--tab-pinned-background);
 }
 .tabbrowser-tab[pinned][titlechanged]:not([selected="true"]):hover {
-  background-image: lvar(--tab-pinned-hover-background);
+  background-image: var(--tab-pinned-hover-background);
 }
 
 .tab-throbber,
