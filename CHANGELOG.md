@@ -1,5 +1,9 @@
 # Changelog
 
+### 3.0.0
+- initial Interlink support
+- Pale Moon: fix pinned tabs hover state
+
 ### 2.4.2
 - use Pale Moon's built-in urlbar RSS button
 
