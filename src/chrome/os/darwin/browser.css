@@ -77,11 +77,52 @@
   text-shadow: none;
 }
 
+/* Blend the topmost toolbar with the titlebar */
+#main-window[tabsontop=false] #nav-bar:not(:-moz-lwtheme),
+#main-window[tabsontop=true] #TabsToolbar:not(:-moz-lwtheme) {
+  -moz-appearance: toolbar;
+}
+
 /* Private browsing indicator */
 
-#main-window[privatebrowsingmode=temporary] #TabsToolbar::before {
-  display: -moz-box;
-  content: "";
-  background: url("chrome://browser/skin/Privacy-16.png") center no-repeat;
-  width: 30px;
+#main-window[privatebrowsingmode=temporary] #titlebar-content {
+  background-image: url("chrome://browser/skin/Privacy-16.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#main-window[privatebrowsingmode=temporary] #titlebar-content {
+  background-position: top 3px right 40px;
+}
+
+#main-window[privatebrowsingmode=temporary][inFullscreen] #titlebar-content {
+  background-position: top 3px right 10px;
+}
+
+#main-window[privatebrowsingmode=temporary]:-moz-locale-dir(rtl) #titlebar-content {
+  background-position: top 3px left 70px;
+}
+
+#main-window[privatebrowsingmode=temporary][inFullscreen]:-moz-locale-dir(rtl) #titlebar-content {
+  background-position: top 3px left 10px;
+}
+
+#main-window[privatebrowsingmode=temporary][inFullscreen] #nav-bar[tabsontop=false] #titlebar-content {
+  padding-inline-end: 50px !important;
+}
+
+@media (-moz-mac-lion-theme) {
+  #main-window[privatebrowsingmode=temporary][inFullscreen] #TabsToolbar[tabsontop=true] #titlebar-content {
+    padding-inline-end: 50px;
+  }
+}
+
+@media not all and (-moz-mac-lion-theme) {
+  #main-window[privatebrowsingmode=temporary] #titlebar-content {
+    background-position: top 3px right 10px;
+  }
+
+  #main-window[privatebrowsingmode=temporary][inFullscreen][tabsontop=true] #window-controls #titlebar-content {
+    padding-inline-end: 50px;
+  }
 }
