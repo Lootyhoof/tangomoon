@@ -10,8 +10,8 @@
 @import url("chrome://messenger/content/messenger.css");
 
 #tabs-toolbar {
-  --tab-background: linear-gradient(to top, var(--toolbar-shadow-color) 1px, transparent 1px), linear-gradient(transparent, hsla(0,0%,45%,.1) 1px, hsla(0,0%,32%,.2) 80%, hsla(0,0%,0%,.2)), linear-gradient(-moz-dialog, -moz-dialog);
-  --tab-hover-background: linear-gradient(to top, var(--toolbar-shadow-color) 1px, transparent 1px), linear-gradient(hsla(0,0%,100%,.3) 1px, hsla(0,0%,75%,.2) 80%, hsla(0,0%,60%,.2)), linear-gradient(-moz-dialog, -moz-dialog);
+  --tab-background: linear-gradient(transparent, hsla(0,0%,45%,.1) 1px, hsla(0,0%,32%,.2) 80%, hsla(0,0%,0%,.2)), linear-gradient(-moz-dialog, -moz-dialog);
+  --tab-hover-background: linear-gradient(hsla(0,0%,100%,.3) 1px, hsla(0,0%,75%,.2) 80%, hsla(0,0%,60%,.2)), linear-gradient(-moz-dialog, -moz-dialog);
   --tab-selected-background: linear-gradient(var(--tab-selected-highlight), rgba(255,255,255,.5) 50%), linear-gradient(-moz-dialog, -moz-dialog);
   --tab-selected-highlight: rgba(255,255,255,.7); 
   --toolbar-shadow-color: rgba(10%,10%,10%,.4);
