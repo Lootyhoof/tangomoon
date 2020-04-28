@@ -1,4 +1,5 @@
 skin    browser         Tangomoon	chrome/browser/
+skin    communicator-icons  Tangomoon   chrome/communicator-icons/
 skin    editor         Tangomoon	chrome/editor/
 skin    global-icons    Tangomoon	chrome/global-icons/
 skin    messenger         Tangomoon	chrome/messenger/
@@ -12,6 +13,10 @@ skin    os         Tangomoon  chrome/os/winnt/ os=WINNT
 override chrome://abouthome/skin/abouthome.css chrome://browser/skin/abouthome/abouthome.css
 
 style chrome://global/content/console.xul chrome://global-icons/skin/console/console.css
+
+# Communicator icon overrides
+override chrome://communicator/skin/profile/migrate.gif chrome://communicator-icons/skin/profile/migrate.png
+override chrome://communicator/skin/profile/profileicon-large.gif chrome://communicator-icons/skin/profile/profile.png
 
 # Global icon overrides
 override chrome://global/skin/alerts/notification-48.png chrome://global-icons/skin/alerts/notification-48.png
