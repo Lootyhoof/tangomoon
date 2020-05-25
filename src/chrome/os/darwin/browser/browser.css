@@ -1,3 +1,7 @@
+:root {
+  --shadow-color: #A0A0A0;
+}
+  
 /* ::::: titlebar ::::: */
 
 #main-window[sizemode="normal"] > #titlebar {
