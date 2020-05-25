@@ -16,7 +16,7 @@ style chrome://global/content/console.xul chrome://global-icons/skin/console/con
 
 # Communicator icon overrides
 override chrome://communicator/skin/profile/migrate.gif chrome://communicator-icons/skin/profile/migrate.png
-override chrome://communicator/skin/profile/profileicon-large.gif chrome://communicator-icons/skin/profile/profile.png
+override chrome://communicator/skin/profile/profileicon-large.gif chrome://communicator-icons/skin/profile/profileicon.png
 
 # Global icon overrides
 override chrome://global/skin/alerts/notification-48.png chrome://global-icons/skin/alerts/notification-48.png
