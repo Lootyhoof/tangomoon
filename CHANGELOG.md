@@ -1,5 +1,16 @@
 # Changelog
 
+### 3.1.0
+- support other GTK-based operating systems
+- Pale Moon: improve integration with macOS
+- Pale Moon: provide platform-specific custom statusbar styling to ensure it works in all platforms
+- Pale Moon: Windows/Linux: improve styling of fullscreen interface
+- Pale Moon: Mac: improve bookmarks toolbar item hover/pressed styling
+- Interlink: remove sidebar grippy
+- Interlink: remove out-of-place Windows-specific toolbar styling
+- Interlink: add profile manager icon overrides
+- Interlink: make tab styling more consistent with how it looks in the browser
+
 ### 3.0.0
 - initial Interlink support
 - Pale Moon: fix pinned tabs hover state
