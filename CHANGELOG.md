@@ -6,6 +6,7 @@
 - Pale Moon: provide platform-specific custom statusbar styling to ensure it works in all platforms
 - Pale Moon: Windows/Linux: improve styling of fullscreen interface
 - Pale Moon: Mac: improve bookmarks toolbar item hover/pressed styling
+- Pale Moon: Windows: add private browsing indicator
 - Interlink: remove sidebar grippy
 - Interlink: remove out-of-place Windows-specific toolbar styling
 - Interlink: add profile manager icon overrides
