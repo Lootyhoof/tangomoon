@@ -1,5 +1,9 @@
 # Changelog
 
+### 3.2.0
+- add mixed-mode SSL styling
+- support Pale Moon 30
+
 ### 3.1.0
 - support other GTK-based operating systems
 - Pale Moon: improve integration with macOS
