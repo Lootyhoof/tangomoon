@@ -1,5 +1,9 @@
 # Changelog
 
+### 3.3.0
+- improve about:newtab search button readability
+- support Pale Moon 31
+
 ### 3.2.0
 - add mixed-mode SSL styling
 - support Pale Moon 30
