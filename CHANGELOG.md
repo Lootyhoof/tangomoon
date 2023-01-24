@@ -1,5 +1,8 @@
 # Changelog
 
+### 3.3.1
+- support Pale Moon 32
+
 ### 3.3.0
 - improve about:newtab search button readability
 - support Pale Moon 31
