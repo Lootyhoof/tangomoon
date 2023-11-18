@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{d2da57e2-a0d3-4b59-b98e-98e62085837f}</em:id>
-    <em:version>3.3.1</em:version>
+    <em:version>3.3.2</em:version>
     <em:name>Tangomoon</em:name>
     <em:description>Theme with Tango icons for UXP. Fork of "Tangofox" by Haven667</em:description>
     <em:creator>Lootyhoof</em:creator>
@@ -26,7 +26,7 @@
       <Description>
         <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
         <em:minVersion>29.3.0</em:minVersion>
-        <em:maxVersion>32.*</em:maxVersion>
+        <em:maxVersion>33.*</em:maxVersion>
       </Description>
     </em:targetApplication>
 
