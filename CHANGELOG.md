@@ -2,6 +2,7 @@
 
 ### 3.4.0
 - support new @media query for Windows 11
+- Win10/11: remove double border under main browser UI
 - support Pale Moon 34
 
 ### 3.3.2

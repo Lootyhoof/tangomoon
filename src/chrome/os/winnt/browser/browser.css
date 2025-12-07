@@ -30,6 +30,13 @@
   }
 }
 
+@media (-moz-os-version: windows-win10),
+       (-moz-os-version: windows-win11) {
+  #navigator-toolbox {
+    border-bottom: none;
+  }
+}
+
 /* ::::: app menu button ::::: */
 
 #appmenu-button {
